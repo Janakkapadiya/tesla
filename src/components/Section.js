@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 function Section(props) {
     return (
         <Wrap bgImage={props.backgroundImage}>
+          
             <ItemText>
                 <h1>
                     {props.tital}
@@ -12,6 +14,7 @@ function Section(props) {
                     {props.description}
                 </p>
             </ItemText>
+           
             <ButtonGroup>
                 <LeftButton>
                     {props.leftBtnText}
@@ -49,7 +52,7 @@ text-align: center;
 `
 
 const ButtonGroup = styled.div`
-   margin: 20px;
+   margin: revert;
    display: flex;
    @media (max-width:700px){
     flex-direction: column;
@@ -70,7 +73,7 @@ const LeftButton = styled.div`
      text-transform:uppercase;
      font-size:12px;
      cursor:pointer;
-     margin-bottom:-40px;
+     margin-bottom:-10px;
 
 `
 const RightButton = styled(LeftButton)`
